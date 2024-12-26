@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #2a9d8f;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 70px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.product-info {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-info:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-info h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.product-info .description {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.product-info p {
+  font-size: 1.1em;
+  color: #666;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.product-info p strong {
+  color: #2a9d8f;
+  font-weight: 600;
+}
+
+.product-info .features {
+  font-style: italic;
+  color: #777;
+  margin-top: 10px;
+}

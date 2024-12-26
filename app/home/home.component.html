@@ -1,0 +1,14 @@
+<header>
+  <h1>Product Catalog</h1>
+</header>
+<div class="container">
+  <div class="product-list" *ngFor="let item of products">
+    <div class="product-info">
+      <h2>{{item.productName}}</h2>
+      <p class="description">{{item.description}}</p>
+      <p><strong>Price:</strong> ${{item.price}}</p>
+      <p><strong>Rating:</strong> {{item.rating}}</p>
+      <p class="features"><strong>Features:</strong> {{item.features}}</p>
+    </div>
+  </div>
+</div>
